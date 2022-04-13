@@ -1,0 +1,16 @@
+<div>
+  <div>
+    <label for="name">Nombre</label>
+    <input id="name" [(ngModel)]="newName" />
+    <button (click)="add()">Añadir</button>
+  </div>
+
+  <div
+    *ngFor="let profile of profiles"
+    class="card"
+    (click)="goToProfile(profile)"
+  >
+    <img [src]="profile.image" />
+    <label>{{profile.name}}</label>
+  </div>
+</div>

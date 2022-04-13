@@ -1,0 +1,16 @@
+:host {
+  text-align: center;
+}
+
+div {
+  margin: 10px
+}
+
+.card {
+  display: inline-grid;
+}
+
+img {
+  width: 128px;
+  height: 128px;
+}
